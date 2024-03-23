@@ -1,0 +1,19 @@
+<div class="border-bottom row" style="margin-botton:16px;padding-bottom:8px;">
+  <div class="col-10">
+    <h6 style="color:rgb(120,120,120);margin-bottom:4px;">
+      {{prod['title']}}
+    </h6>
+    <div>
+      Description : {{prod['Description']}}
+    </div>
+      {% if 'Price' in prod %}
+        <div>
+           Price : {{prod['Price']}}
+        </div>
+      {% endif %}
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-outline-primary mt-3">Buy 
+     Now</button>
+  </div>
+</div>
