@@ -15,10 +15,11 @@
     </style>
   </head>
   <body>
+    {%include 'nav.html' %}
+     <img class="img-fluid img-thumbnail mt-2 mb-3" id="banner" src="https://b904c576-0360-46b9-877e-c1b278edc9a2-00-1ejwb50o31fnw.sisko.replit.dev/static/glow.jpg" height="320">
     <div class="container">
     <h1 class="text-center display-2 mt-4"><em>GLOW</em></h1>
     <h2 class="text-center display-6 mb-4"><em>Unleash Your Radiance</em></h2>
-    <img class="img-fluid img-thumbnail mt-2 mb-3" id="banner" src="https://b904c576-0360-46b9-877e-c1b278edc9a2-00-1ejwb50o31fnw.sisko.replit.dev/static/glow.jpg" height="320">
       <figure class="text-center">
         <blockquote class="blockquote">
           <p>Embrace your true beauty and let your light shine in the world.</p>
@@ -27,7 +28,6 @@
           Unknown 
         </figcaption>
       </figure>
-    <h3 class="text-center">About Glow</h3>
     <p class="lh-base lead p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">A website featuring a unified "Beauty Transformation To-Do List" generated from personalized routines provided by specialists. This platform will empower individuals to achieve their desired beauty goals by streamlining
 routines, tracking progress, and offering a holistic approach to transformation. By offering a unified to-do list and progress tracking features, our platform can empower users to achieve their beauty goals with greater ease and efficiency.
     </p>
@@ -42,7 +42,8 @@ routines, tracking progress, and offering a holistic approach to transformation.
          {% include 'prod.html' %}
       {% endfor %}
     </div>
-    <button type="button" class="btn btn-primary d-grid gap-2 col-2 mx-auto mt-4 mb-5">Contact Us</button>
+    <a href="mailto:arathychandran226@gmail.com?subject=Query&body=My%20Name%20%3A%20%5BEnter%20your%20name%5D%0D%0AMy%20Query%3A%20%5BEnter%20your%20query%5D" type="button" class="btn btn-primary d-grid gap-2 col-2 mx-auto mt-4 mb-5">Contact Us</a>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
